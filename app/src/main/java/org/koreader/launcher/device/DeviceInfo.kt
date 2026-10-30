@@ -293,10 +293,10 @@ object DeviceInfo {
         HANVON_960 = BRAND.contentEquals("freescale")
             && PRODUCT.contentEquals("evk_6sl_eink")
 
-        // Artatech Inkbook Prime/Prime HD.
+        // Artatech Inkbook Prime/Prime HD/Classic 2.
         INKBOOK = (MANUFACTURER.contentEquals("artatech")
             && BRAND.contentEquals("inkbook")
-            && MODEL.startsWith("prime"))
+            && (MODEL.startsWith("prime") || MODEL.startsWith("classic")))
 
         // JDRead1
         JDREAD = MANUFACTURER.contentEquals("onyx")
